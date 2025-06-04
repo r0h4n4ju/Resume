@@ -120,11 +120,6 @@ span {
     transition: 0.2s linear;
 }
 
-.home-img img:hover {
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-
 .social-icons a {
     color: #b74b4b;
     display: inline-flex;
