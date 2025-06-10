@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Amrita Vishwa Vidyapeetham</title>
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+  <header>
+    <h1>About Us</h1>
+  </header>
+
+  <main>
+    <section class="about fade-in">
+      <div class="text">
+        <h2>About Amrita</h2>
+        <p>Amrita Vishwa Vidyapeetham is a multi-disciplinary, research-intensive, private university, educating a vibrant student population of over 30,000 by 2000+ strong faculty. Accredited with the highest possible ‘A++’ grade by NAAC, Amrita offers more than 300 UG, PG, and Ph.D. programs across various disciplines...</p>
+        <p>With its extensive network of nine campuses across India, covering 1200+ acres and 100 lakh sq ft of built-up space, Amrita stands among India's top-tier private universities, known for its academic excellence and social commitment.</p>
+      </div>
+      <div class="image-placeholder">[Image: Campus Overview]</div>
+    </section>
+
+    <section class="vision fade-in">
+      <div class="text">
+        <h2>Our Vision</h2>
+        <p>To be an exemplary institution committed to the transformative power of value-based education — harmonizing scientific knowledge with spiritual insight, fostering societal benefit and a sustainable future for all.</p>
+      </div>
+      <div class="image-placeholder">[Image: Vision Graphic]</div>
+    </section>
+
+    <section class="mission fade-in">
+      <div class="text">
+        <h2>Our Mission</h2>
+        <h3>Education for Life</h3>
+        <p>Amrita believes in education that imparts essential human values. Rooted in Dharma, Karuna, and Shraddha, our students develop compassion, patience, and a strong inner foundation to create a better world.</p>
+        <h3>Compassion Driven Research</h3>
+        <p>Our research addresses poverty, illness, and environmental degradation. By transforming compassion into action, Amrita drives innovation with global impact and societal relevance.</p>
+      </div>
+      <div class="image-placeholder">[Image: Research or Campus Life]</div>
+    </section>
+
+    <section class="global fade-in">
+      <div class="text">
+        <h2>Global Impact</h2>
+        <p>Amrita bridges Eastern and Western cultures to solve global challenges in environment, development, and health through international collaborations and forward-thinking research.</p>
+      </div>
+      <div class="image-placeholder">[Image: Global Map / Collaborations]</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Amrita Vishwa Vidyapeetham</p>
+  </footer>
+  <script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
